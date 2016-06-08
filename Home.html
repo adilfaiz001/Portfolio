@@ -8,23 +8,36 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Home.css" media="screen" title="no title" charset="utf-8">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>      <!--Cover Name Font-->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>       <!--cover detail font-->
+
 
   </head>
 
   <body>
     <div class="cover-page" id="check">
-        <div id="DIV_5">
-  	       <header id="HEADER_6">
-  		       <a href="#" id="A_1"><span id="SPAN_2"></span> <span id="SPAN_3">Menu</span><span id="SPAN_4"></span></a>
-  	       </header>
-         </div>
+
+         <nav class="navbar navbar-inverse" id="navbar">
+           <div class="container-fluid">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="#">WebSiteName</a>
+               </div>
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Page 1</a></li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+               </ul>
+            </div>
+         </nav>
 
        <div class="cover-container">
          <div class="cover-name">
            <h1 id="myself">Adil Faiz</h1>
          </div>
+
+         <div class="border-name"></div>
+
          <div class="cover-detail">
            <h2>Web Developer</h2>
            <h2>Programmer</h2>
@@ -32,7 +45,9 @@
          </div>
 
        </div>
-
+       <div class="img-self">
+          <img src="img/img.jpg" alt=""  class="img-circle" id="img-self"/>
+       </div>
     </div>
 
     <div class="page-container">
@@ -54,6 +69,6 @@
 
     </div>
 
-
+  <script type="text/javascript" src="js/Home.js"></script>
   </body>
 </html>
