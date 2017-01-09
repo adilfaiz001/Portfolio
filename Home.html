@@ -7,31 +7,72 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Home.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>      <!--Cover Name Font-->
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>       <!--cover detail font-->
-
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'><!--slides heading-->
+    <link href='https://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>  <!--slides Content font -->
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'><!--Navbar font -->
+    <link href='https://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'><!--Page Container Titles -->
+    <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i|Yellowtail&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"> <!--Page container heading-->
 
   </head>
 
   <body>
-    <div class="cover-page" id="check">
+    <div class="cover-page parallax" id="check">
 
          <nav class="navbar navbar-inverse" id="navbar">
            <div class="container-fluid">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="#">WebSiteName</a>
+                  <button id="side-menu" class="navbar-nav">
+                    <div class="hbmenu">
+                      <span class="hb"></span></div>
+                      Menu
+                  </button>
+
+                  <!--<a class="navbar-brand" href="#">Adil Faiz</a> -->
                </div>
                <ul class="nav navbar-nav">
                   <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Page 1</a></li>
-                  <li><a href="#">Page 2</a></li>
-                  <li><a href="#">Page 3</a></li>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Education</a></li>
+                  <li><a href="#">Ask?</a></li>
                </ul>
             </div>
          </nav>
 
+         <div class="o-grid__item" id="ham-menu">
+            <button class="c-hamburger c-hamburger--htla" id="c-hamburger">
+              <span>toggle menu</span>
+            </button>
+         </div>
+         <div class="slide-left-menu" id="slide-left-menu">
+           <button type="button" name="close" class="sl-menu-close" id="sl-menu-close"></button>
+
+           <div class="sl-header-box">
+               <h1 id="a">A</h1>
+               <h1 id="f">F</h1>
+           </div>
+           <div class="sl-menu">
+             <ul class="sl-menu-items">
+               <li class="active"><a href="#">Machine Learning</a></li>
+               <li><a href="#">WorkSpace</a></li>
+               <li><a href="#">WorkIoT</a></li>
+               <li><a href="#">MechSpace</a></li>
+               <li><a href="#">Blog</a></li>
+
+             </ul>
+           </div>
+         </div>
+
        <div class="cover-container">
+
          <div class="cover-name">
            <h1 id="myself">Adil Faiz</h1>
          </div>
@@ -45,30 +86,157 @@
          </div>
 
        </div>
+       <div class="row">
+         <div class="row-social">
+            <ul class="social">
+                <li><a href="https://twitter.com/adilfaiz001" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/adilfaiz01" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/adilfaiz001" title="github"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/adilfaiz01/" title="instagram"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/102202590320347610655" title="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href=" https://dribbble.com/adilfaiz001" title="Dribble"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="https://in.linkedin.com/in/adil-faiz-651b10a7" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://www.last.fm/user/adilfaiz001" title="lastfm"><i class="fa fa-lastfm"></i></a></li>
+            </ul>
+        </div>
+       </div>
+
        <div class="img-self">
           <img src="img/img.jpg" alt=""  class="img-circle" id="img-self"/>
        </div>
     </div>
 
     <div class="page-container">
-      <div class="about">
-        <p>
-        For me, I am driven by two main philosophies: know more today about the
+
+      <div class="about-box">
+        <p class="Quote">
+        "For me, I am driven by two main philosophies: know more today about the
         world than I knew yesterday and lessen the suffering of others. You'd be
-        surprised how far that gets you.
+        surprised how far that gets you."
+        <br>
+        <a href="#" id="author">Neil deGrasse Tyson</a>
         </p>
+        <div class="about">
+          <h1 class="intro"><a href="#">about</a></h1>
+          <p>
+            I introduce the most creative and original ideas for my customers!
+          <br>
+
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus.
+          Aenean nonummy hendrerit mauris. Phasellus porta.
+          <br>
+          Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida
+          at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.
+          Donec accumsan malesuada orci. Donec sit amet eros.
+          </p>
+          <div class="row row2">
+            <div class="col-md-4">
+              <section class="lazy-load-box effect-slidefromleft" data-delay="0" data-speed="800" style="transition: all 800ms ease; opacity: 1;">
+                <div class="service-box">
+                  <figure class="icon">
+                    <i class="fa fa-star"></i>
+                  </figure>
+                  <div class="service-box_body">
+                    <h2 class="title">Profile</h2>
+                    <div class="service-box_text">
+                      Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris.
+                      Phasellus porta. Fusce suscipit varius mi.
+                      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </section>
+
+            </div>
+            <div class="col-md-4">
+              <section class="lazy-load-box effect-slidefromleft" data-delay="0" data-speed="800" style="transition: all 800ms ease; opacity: 1;">
+                <section class="">
+                  <div class="service-box">
+                    <figure class="icon">
+                      <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    </figure>
+                    <div class="service-box_body">
+                      <h2 class="title">Address</h2>
+                      <div class="service-box_text">
+                        Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris.
+                        Phasellus porta. Fusce suscipit varius mi.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </section>
+
+              </section>
+
+            </div>
+            <div class="col-md-4">
+              <section class="lazy-load-box effect-slidefromleft" data-delay="0" data-speed="800" style="transition: all 800ms ease; opacity: 1;">
+                <section class="">
+                  <div class="service-box">
+                    <figure class="icon">
+                      <i class="fa fa-flag" aria-hidden="true"></i>
+                    </figure>
+                    <div class="service-box_body">
+                      <h2 class="title">Hobby & Interest</h2>
+                      <div class="service-box_text">
+                        Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris.
+                        Phasellus porta. Fusce suscipit varius mi.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </section>
+
+              </section>
+
+            </div>
+          </div>
+        </div>
       </div>
       <div class="program-container">
-        <aside class="sidebar-program">
-          <p>
-            content
-          </p>
-        </aside>
-        <h1>Programming Skills</h1>
+        <section class="module parallax parallax-1">
+          <div class="container">
+            <h1 class="Program">Code</h1>
+            <h1 class="Program" style="padding-left:0.7em">To</h1>
+            <h1 class="Program">Love</h1>
+          </div>
+       </section>
       </div>
+
+      <div class="Machine-Learning">
+        <section class="module parallax parallax-2">
+          <div class="container">
+            <h1></h1>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="Web-Development">
+        <section class="module parallax parallax-3">
+          <div class="container">
+
+          </div>
+        </section>
+
+      </div>
+
 
     </div>
 
   <script type="text/javascript" src="js/Home.js"></script>
+  <script type="text/javascript" src="js/Parallax.js"></script>
+
   </body>
 </html>
