@@ -241,13 +241,17 @@ margin-top: 6em;
   color: rgb(251, 251, 251);
 }
 .border-name{
-    border-bottom: solid 2px rgb(255, 255, 255);
-    margin-right: 35em;
+  border-bottom: solid 3.5px rgb(255, 255, 255);
+  margin-right: 35em;
+  position: relative;
+  bottom: 2em;
 }
 .cover-detail
 {
-  display:flex;
-  padding-right: 35em;
+    display: flex;
+    padding-right: 35em;
+    position: relative;
+    bottom: 2.9em;
 }
 .cover-detail>h2
 {
@@ -256,6 +260,13 @@ margin-top: 6em;
   font-family: 'Poiret One', cursive;
   color: rgb(255, 255, 255);
   margin-left: 60px;
+}
+.row{
+  margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 3.9em;
 }
 .row-social{
   height: 50px;
@@ -343,8 +354,9 @@ margin-top: 6em;
 }
 
 .img-self{
+  position: relative;
+  bottom: 2.5em;
   margin-left: 45em;
-  padding-top: 2.5em;
 }
 .img-self>img
 {
@@ -481,6 +493,7 @@ z-index: 250;
   font-family: 'Poiret One', cursive;
   padding-left: 8em;
   padding-right: 8em;
+  padding-top: 1.4em;
 }
 #author
 {
@@ -518,6 +531,7 @@ z-index: 250;
   font-family: 'Economica', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
+  padding-bottom: 2.5em;
 }
 .row2
 {
@@ -622,9 +636,9 @@ z-index: 250;
   position: relative;
   top: 400px;
 }
-#con1{
+.con1{
   width: 100%;
-  height: 680px
+  height: 680px;
 }
 .parallax{
 }
