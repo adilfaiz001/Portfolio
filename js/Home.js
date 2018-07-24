@@ -1,5 +1,3 @@
-/*
-
 
 function navbarScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -10,11 +8,15 @@ function navbarScroll() {
         document.getElementById("navbar").style.transition="transform 0.4s";
     }
 }
-/*document.getElementById('c-hamburger').onclick=function()
+window.onscroll = function() {navbarScroll()};
+
+
+
+document.getElementById('c-hamburger').onclick=function()
 {
   document.getElementById('slide-left-menu').style.transform="translateX(-4em)";
   document.getElementById('slide-left-menu').style.transition="transform 1s";
-};*/
+};
 document.getElementById('sl-menu-close').onclick=function()
 {
   document.getElementById('slide-left-menu').style.transform="translateX(-27em)";
@@ -28,7 +30,7 @@ $(document).ready(function(){
   });
 });
 
-/*(function() {
+(function() {
 
   "use strict";
 
@@ -46,4 +48,4 @@ $(document).ready(function(){
     });
   }
 
-})();*/
+})();
