@@ -640,7 +640,7 @@ z-index: 250;
   background-image: url("../img/pg.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 727px;
 }
 .con1{
@@ -664,13 +664,8 @@ z-index: 250;
 #Header2{
   background-image: url("../img/55.jpg");
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   height: 727px;
-}
-.sticky{
-  background-color: white;
-  background-attachment: fixed;
-  width: 100%;
 }
 #ct1{
   font-family: 'Bungee Shade', cursive;
@@ -678,4 +673,14 @@ z-index: 250;
   font-size: 4.5em;
   color: white;
   margin-left: 4em;
+}
+
+
+
+.footer{
+  position: relative;
+background-color: rgba(26, 188, 156, 0.87);
+height: 200px;
+width: 100%;
+top: 30em;
 }

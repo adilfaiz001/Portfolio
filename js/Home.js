@@ -8,7 +8,7 @@ function navbarScroll() {
         document.getElementById("navbar").style.transition="transform 0.4s";
     }
 }
-window.onscroll = function() {navbarScroll();myFunction();};
+window.onscroll = function() {navbarScroll(); parallax();};
 
 
 
@@ -54,16 +54,37 @@ $(document).ready(function(){
 
 /*Slide2 Content */
 var header2 = document.getElementById("Header2");
-
+var header1 = document.getElementById("Header1");
 var domRect = header2.getBoundingClientRect();
+var domRect1 = header1.getBoundingClientRect();
 
-function myFunction() {
-  console.log(domRect.top);
-  
-  if (domRect.top < 113) {
-    console.log("here");
-    header2.style.backgroundColor='white';
-  } else {
-    navbar.classList.remove("sticky");
-  }
+var h_height = domRect.top+window.pageYOffset;
+
+/*function parallax() {
+    var speed = 2.0;
+    var t = domRect.top;
+    var t1 = domRect1.top;
+    console.log(t1);
+    if(t1<113)
+    {
+      header1.style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/5.0)+"px"
+    }
+    header2.style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/2.0)+"px";
+
+  }*/
+function parallax()
+{
+  speed = 5.0;
+  header1.style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
 }
+
+  $(window).scroll(function() {
+     var hT = $('#Header1').offset().top,
+         hH = $('#Header1').outerHeight(),
+         wH = $(window).height(),
+         wS = $(this).scrollTop();
+      console.log((hT-wH) , wS);
+     if (wS > (hT+hH-wH)){
+      parallax();
+     }
+  });
