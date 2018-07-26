@@ -8,7 +8,12 @@ function navbarScroll() {
         document.getElementById("navbar").style.transition="transform 0.4s";
     }
 }
-window.onscroll = function() {navbarScroll(); parallax();};
+window.onscroll = function() {
+  navbarScroll();
+  var speed = 5.0;
+  document.getElementById("check").style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
+
+  };
 
 
 
@@ -83,7 +88,7 @@ function parallax()
          hH = $('#Header1').outerHeight(),
          wH = $(window).height(),
          wS = $(this).scrollTop();
-      console.log((hT-wH) , wS);
+    //console.log(wS,hT,hH,wH);
      if (wS > (hT+hH-wH)){
       parallax();
      }
