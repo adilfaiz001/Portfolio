@@ -220,7 +220,7 @@ background-color: rgba(26, 188, 156, 1);
   background-size: cover;
   background-blend-mode: color;
   background-color: rgba(29, 29, 29, 0.37);
-  height: 40em;
+  height: 44em;
   position: absolute;
   width: 100%;
 }
@@ -357,6 +357,7 @@ margin-top: 6em;
   position: relative;
   bottom: 2.5em;
   margin-left: 45em;
+  margin-top: 4em;
 }
 .img-self>img
 {
@@ -636,11 +637,10 @@ z-index: 250;
   position: relative;
   top: 400px;
 }
-.slide1{
+#Header1{
   background-image: url("../img/pg.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
   height: 727px;
 }
 .con1{
@@ -663,7 +663,7 @@ z-index: 250;
 }
 #Header2{
   background-image: url("../img/55.jpg");
-  background-position: center;
+  background-repeat: no-repeat;
   background-size:cover;
   height: 727px;
 }

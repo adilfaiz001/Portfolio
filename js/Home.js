@@ -1,4 +1,5 @@
 
+/*Navigation Bar scroll function */
 function navbarScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("navbar").style.transform="translateY(0)";
@@ -8,15 +9,10 @@ function navbarScroll() {
         document.getElementById("navbar").style.transition="transform 0.4s";
     }
 }
-window.onscroll = function() {
-  navbarScroll();
-  var speed = 5.0;
-  document.getElementById("check").style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
-
-  };
+/*Navigation Bar function Ends*/
 
 
-
+/*Hamburger Menu Function */
 document.getElementById('c-hamburger').onclick=function()
 {
   document.getElementById('slide-left-menu').style.transform="translateX(-4em)";
@@ -27,6 +23,8 @@ document.getElementById('sl-menu-close').onclick=function()
   document.getElementById('slide-left-menu').style.transform="translateX(-27em)";
   document.getElementById('slide-left-menu').style.transition="transform 1s";
 };
+/*Hamburger Menu Ends*/
+
 
 /*
 $(document).ready(function(){
@@ -36,6 +34,7 @@ $(document).ready(function(){
   });
 });
 */
+
 (function() {
 
   "use strict";
@@ -58,12 +57,11 @@ $(document).ready(function(){
 
 
 /*Slide2 Content */
+
 var header2 = document.getElementById("Header2");
 var header1 = document.getElementById("Header1");
 var domRect = header2.getBoundingClientRect();
 var domRect1 = header1.getBoundingClientRect();
-
-var h_height = domRect.top+window.pageYOffset;
 
 /*function parallax() {
     var speed = 2.0;
@@ -77,11 +75,6 @@ var h_height = domRect.top+window.pageYOffset;
     header2.style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/2.0)+"px";
 
   }*/
-function parallax()
-{
-  speed = 5.0;
-  header1.style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
-}
 
   $(window).scroll(function() {
      var hT = $('#Header1').offset().top,
@@ -89,7 +82,24 @@ function parallax()
          wH = $(window).height(),
          wS = $(this).scrollTop();
     //console.log(wS,hT,hH,wH);
-     if (wS > (hT+hH-wH)){
-      parallax();
+     if (wS > (hT+hH-wH))
+     {
+       $("#Header1").css("background-attachment","fixed");
+     }
+     else {
+       $("#Header1").css("background-attachment","scroll");
      }
   });
+
+
+
+
+
+/*Event triggers */
+
+window.onscroll = function()
+{
+    navbarScroll();
+    var speed = 2.0;
+    document.getElementById("check").style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
+};
