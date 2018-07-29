@@ -1,4 +1,3 @@
-
 /*Navigation Bar scroll function */
 function navbarScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -12,48 +11,93 @@ function navbarScroll() {
 /*Navigation Bar function Ends*/
 
 
-/*Hamburger Menu Function */
-document.getElementById('c-hamburger').onclick=function()
-{
-  document.getElementById('slide-left-menu').style.transform="translateX(-4em)";
-  document.getElementById('slide-left-menu').style.transition="transform 1s";
-};
-document.getElementById('sl-menu-close').onclick=function()
-{
-  document.getElementById('slide-left-menu').style.transform="translateX(-27em)";
-  document.getElementById('slide-left-menu').style.transition="transform 1s";
-};
-/*Hamburger Menu Ends*/
+//NOte: Sequence of function here in js should be in order of their function in page,they work according to their sequence as in programming.
 
 
-/*
-$(document).ready(function(){
-  $('#c-hamburger,#side-menu').click(function(){
-    $('#slide-left-menu').css({"transform":"translateX(-4em)"});
-    $('#slide-left-menu').css({"transition":"transform 1s"});
-  });
-});
+
+//---------------Left Slide Card----------------------
+
+//----------Cross sign Animation----------------
+//Hover Over Element Bug
+//Hover over burger causing st-1 and st-2 unstable
+//need to isolate hover class for burger st-1 and st-2
+
+/*document.querySelector(".burger").onmouseover=function()
+{
+  document.querySelector(".burger").classList.add("hover");
+};
+
+document.querySelector(".burger").onmouseout=function()
+{
+  document.querySelector(".burger").classList.remove("hover");
+};
 */
 
-(function() {
 
-  "use strict";
+function p()
+{
+  document.getElementById('slide-left-menu').style.transform="translateX(-4em)";
+  document.getElementById('slide-left-menu').style.transition="transform .45s cubic-bezier(.45,0,0,1)";
 
-  var toggles = document.querySelectorAll(".c-hamburger");
+  document.getElementById("Burger").classList.add("st-1");
+  setTimeout(del,400);
+  document.getElementById("Burger").classList.add("st-2");
+}
 
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var toggle = toggles[i];
-    toggleHandler(toggle);
-  };
-
-  function toggleHandler(toggle) {
-    toggle.addEventListener( "click", function(e) {
-      e.preventDefault();
-      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-    });
+document.querySelector(".burger").onclick=function()
+{
+  if (document.querySelector(".st-2") != null)
+  {
+    document.getElementById('slide-left-menu').style.transform="translateX(-103.8%)";
+    document.getElementById('slide-left-menu').style.transition="transform .45s cubic-bezier(.45,0,0,1)";
+    document.getElementById("Burger").classList.add("st-1");
+    setTimeout(del,400);
+    document.getElementById("Burger").classList.remove("st-2");
   }
+  else
+  {
+    p();
+  }
+};
 
-})();
+//st-2 hover for cross sign
+/*
+document.querySelector(".burger").onmouseover=function()
+{
+  if (document.querySelector(".st-2") != null)
+  {
+    document.getElementById("Burger").classList.add("hover");
+  }
+  if (document.querySelector(".st-2") != null)
+  {
+  document.querySelector(".burger").onmouseout=function()
+  {
+    document.getElementById("Burger").classList.remove("hover");
+  }
+}
+};
+*/
+
+function del(){
+  document.getElementById("Burger").classList.remove("st-1");
+}
+//-----------Cross Animation Ends-----------------
+
+
+
+
+
+
+//----------------Left Slide Card Ends-----------------------
+
+
+
+
+
+
+
+
+
 
 
 /*Slide2 Content */
@@ -100,6 +144,6 @@ var domRect1 = header1.getBoundingClientRect();
 window.onscroll = function()
 {
     navbarScroll();
-    var speed = 2.0;
+    var speed = 2.5;
     document.getElementById("check").style.backgroundPosition = (-window.pageXOffset/speed)+"px "+(-window.pageYOffset/speed)+"px";
 };
