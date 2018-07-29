@@ -125,7 +125,7 @@ var domRect1 = header1.getBoundingClientRect();
          hH = $('#Header1').outerHeight(),
          wH = $(window).height(),
          wS = $(this).scrollTop();
-    //console.log(wS,hT,hH,wH);
+    console.log(wS,hT,hH,wH);
      if (wS > (hT+hH-wH))
      {
        $("#Header1").css("background-attachment","fixed");
