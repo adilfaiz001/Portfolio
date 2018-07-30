@@ -3,7 +3,10 @@ body{
   overflow-x: hidden;
   background-color: #d4cdcd;
 }
-
+/*::-webkit-scrollbar{
+  width: 10px;
+}
+*/
 .hbmenu {
     display: block;
     position: absolute;
@@ -521,7 +524,6 @@ margin-top: 6em;
 .sl-menu-items>li{
   height:25%;
 }
-
 .sl-menu-items>li>a{
     display: flex;
     height:100%;
@@ -534,13 +536,34 @@ margin-top: 6em;
     background-color: rgba(0,0,0,.02);
     overflow: hidden;
     color:#5a5a5a;
+    transform: translate3d(-500px,0,0);
+    font-family: 'Montserrat',Tahoma,Aerial,sans-serif;
+    /*
     -moz-transition: -moz-transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
     -o-transition: -o-transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
     -webkit-transition: -webkit-transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out;
     -webkit-transition-delay: 0s,.1s;
-    transition: transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
-    font-family: 'Montserrat',Tahoma,Aerial,sans-serif;
+    */
+
 }
+.slide-trans>li>a{
+  transform: translate3d(0,0,0);
+  transition: transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
+}
+/*Using ids for <a> because we made a child of li so everytime its start with first child of li,doing so we have to change and remove li for sequencing <a> parenthood*/
+#first-child{
+  transition-delay: 0.48s;
+}
+#second-child{
+  transition-delay: 0.36s;
+}
+#third-child{
+  transition-delay: 0.24s;
+}
+#fourth-child{
+  transition-delay: 0.12s;
+}
+
 .sl-menu-items>li>a>span{
   display: block;
   width: 100%;
@@ -548,7 +571,7 @@ margin-top: 6em;
   line-height: 3.5;
 }
 
-/*Exp*/
+
 .sl-menu-items>li>a::before{
   content: "";
      top: 0;
@@ -779,17 +802,28 @@ margin-top: 6em;
 .parallax{
 
 }
-#cc1{
-  font-family: 'Bungee Shade', cursive;
+.con-code{
   position: relative;
-  top: 4em;
+   width: 20%;
+   top: 33%;
+   float: right;
+   right: 12em;
+}
+.con-code>p{
+  font-family: 'Bungee Shade', cursive;
   font-size: 4.5em;
   color: white;
-  margin-left: 4em;
+}
+.con-code>p:nth-child(1){
+  margin-left: 0.4em;
+}
+.con-code>p:nth-child(2){
+  margin-left: 1.2em;
 }
 .space{
   height:0.2em;
 }
+/*
 #Header2{
   background-image: url("../img/55.jpg");
   background-repeat: no-repeat;
@@ -803,6 +837,10 @@ margin-top: 6em;
   color: white;
   margin-left: 4em;
 }
+*/
+
+
+
 
 
 

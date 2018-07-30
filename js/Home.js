@@ -53,10 +53,12 @@ document.querySelector(".burger").onclick=function()
     document.getElementById("Burger").classList.add("st-1");
     setTimeout(del,400);
     document.getElementById("Burger").classList.remove("st-2");
+    document.getElementById("sl-menu-items").classList.remove("slide-trans");
   }
   else
   {
     p();
+    document.getElementById("sl-menu-items").classList.add("slide-trans");
   }
 };
 
@@ -102,12 +104,15 @@ function del(){
 
 /*Slide2 Content */
 
+
+
+/*
 var header2 = document.getElementById("Header2");
 var header1 = document.getElementById("Header1");
 var domRect = header2.getBoundingClientRect();
 var domRect1 = header1.getBoundingClientRect();
 
-/*function parallax() {
+function parallax() {
     var speed = 2.0;
     var t = domRect.top;
     var t1 = domRect1.top;
@@ -125,16 +130,17 @@ var domRect1 = header1.getBoundingClientRect();
          hH = $('#Header1').outerHeight(),
          wH = $(window).height(),
          wS = $(this).scrollTop();
-    console.log(wS,hT,hH,wH);
-     if (wS > (hT+hH-wH))
+     if ((wS+52) > (hT+hH-wH))
      {
        $("#Header1").css("background-attachment","fixed");
+       $('#Header1').css("background-position","0 52px");
      }
      else {
        $("#Header1").css("background-attachment","scroll");
+       $('#Header1').css("background-position","0 0")
      }
   });
-
+  $()
 
 
 
