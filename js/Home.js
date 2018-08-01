@@ -93,15 +93,6 @@ function del(){
 //----------------Left Slide Card Ends-----------------------
 
 
-
-
-
-
-
-
-
-
-
 /*Slide2 Content */
 
 
@@ -130,18 +121,31 @@ function parallax() {
          hH = $('#Header1').outerHeight(),
          wH = $(window).height(),
          wS = $(this).scrollTop();
-     if ((wS+52) > (hT+hH-wH))
+     if ((wS+120) > (hT+hH-wH))
      {
-       $("#Header1").css("background-attachment","fixed");
-       $('#Header1').css("background-position","0 52px");
+       $(".cc1").addClass('con-code-slide');
      }
-     else {
-       $("#Header1").css("background-attachment","scroll");
-       $('#Header1').css("background-position","0 0")
-     }
-  });
-  $()
 
+     var hT2 = $('#Header2').offset().top,
+         hH2 = $('#Header2').outerHeight();
+
+    if ((wS+300) > (hT2+hH2-wH))
+    {
+      $('.progress').addClass('slide-up');
+    }
+    //var x = parseInt($('.progress').css('transform').split(',')[5]);  learn matrix of transform
+    console.log(wS);
+
+    if(wS>2687){
+      $('.py').addClass('python');
+      $('.jv').addClass('java');
+      $('.cp').addClass('cpp');
+      $('.c').addClass('cc');
+    }
+
+
+
+  });
 
 
 

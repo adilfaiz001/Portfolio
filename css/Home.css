@@ -201,7 +201,7 @@ background-color: rgba(26, 188, 156, 1);
 
 .cover-container{
 margin-left: 35em;
-margin-top: 6em;
+margin-top: 13.5em;
 }
 .cover-name{
   margin-left: 7em;
@@ -789,64 +789,182 @@ margin-top: 6em;
   position: relative;
   top: 400px;
 }
+
 #Header1{
   background-image: url("../img/pg.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 727px;
-}
-.con1{
-  width: 100%;
-  height: 680px;
-}
-.parallax{
-
 }
 .con-code{
   position: relative;
-   width: 20%;
-   top: 33%;
-   float: right;
-   right: 12em;
+    width: 100%;
+    top: 16em;
+    text-align: -webkit-center;
 }
 .con-code>p{
   font-family: 'Bungee Shade', cursive;
-  font-size: 4.5em;
-  color: white;
+font-size: 7.5em;
+color: white;
+text-align: -webkit-center;
+display: -webkit-inline-box;
+
 }
 .con-code>p:nth-child(1){
-  margin-left: 0.4em;
+  transform:translate3d(-120%,0,0);
 }
-.con-code>p:nth-child(2){
-  margin-left: 1.2em;
+.con-code>p:nth-child(3){
+  transform: translate3d(126%,0,0);
 }
-.space{
-  height:0.2em;
+
+.con-code-slide{
+  animation: ccs 1s forwards;
 }
-/*
+@keyframes ccs {
+  100%
+  {
+    transform: translate3d(0,0,0);
+    transition: transform;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.65,0.1,0.1,0.65);
+  }
+}
+
+.space
+{
+  height: 8em;
+}
+
 #Header2{
-  background-image: url("../img/55.jpg");
+  background-image: url("../img/");
   background-repeat: no-repeat;
   background-size:cover;
   height: 727px;
 }
-#ct1{
-  font-family: 'Bungee Shade', cursive;
-  position: relative;
-  font-size: 4.5em;
-  color: white;
-  margin-left: 4em;
+
+#pk-h1{
+  font-family: 'Poiret One', cursive;
+font-size: 5em;
+width: 25%;
+margin-left: 1.5em;
 }
-*/
+
+.progress{
+  height: 56px;
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-box-shadow:  0 -0 5px 10px rgba(146, 144, 153,0.8);
+  box-shadow: 0 -0 5px 10px rgba(146, 144, 153,0.8);
+  margin-top: 4em;
+  border-radius: 15px;
+  transform:translate3d(0,20em,0) scale3d(0.5,0.5,1);
+  background-color: #d4cdcd;
+}
+.progress-bar{
+  height: 46px;
+  margin-top: 5px;
+  width: 90%;
+  border-radius: 15px;
+}
+.python{
+  background-color: #3376b7;
+  background-image: url('../img/py.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: pyc 1s forwards;
+  margin-left: 7px;
+}
+@keyframes pyc {
+  100%
+  {
+    width: 49.5%;
+    transition-property: width;
+    transition-timing-function: linear;
+  }
+
+}
+
+
+.java{
+  background-color: #3e493a;
+  background-image: url('../img/jv.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: javac 1s forwards;
+  animation-delay: 0.7s;
+  margin-left: 4px;
+}
+@keyframes javac {
+  100%
+  {
+    width:29.5%;
+    transition-property: width;
+    transition-timing-function: linear;
+  }
+}
+.cpp{
+  background-color: #1ab4ba;
+  background-image: url('../img/cpp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: cppc 0.5s forwards;
+  animation-delay: 1.3s;
+  margin-left: 4px;
+}
+@keyframes cppc {
+  100%
+  {
+    width: 9.5%;
+    transition-property: width;
+    transition-timing-function: linear;
+  }
+}
+.cc{
+  background-color:rgb(210, 70, 70) ;
+  background-image: url('../img/c.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: ccc 0.5s forwards;
+  animation-delay: 1.6s;
+  margin-left: 4px;
+}
+@keyframes ccc {
+  100%
+  {
+    width: 9.5%;
+    transition-property: width;
+    transition-timing-function: linear;
+  }
+}
+
+.slide-up
+{
+animation: prog_up 1s forwards;
+}
+@keyframes prog_up
+{
+  100%
+  {
+    transform : translate3d(0,0,0) scale3d(1,1,1);
+    transition: transform;
+
+    transition-timing-function: cubic-bezier(0.65,0.1,0.1,0.65);
+  }
+
+}
 
 
 
 
 
 
-.footer{
+footer{
   position: relative;
-background-color: rgba(26, 188, 156, 0.87);
+background-color: #1d1d1d;
 height: 200px;
 width: 100%;
 top: 30em;
