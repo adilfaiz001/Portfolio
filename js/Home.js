@@ -116,6 +116,8 @@ function parallax() {
 
   }*/
 
+
+//optimize scroll content with element position for different devices
   $(window).scroll(function() {
      var hT = $('#Header1').offset().top,
          hH = $('#Header1').outerHeight(),
@@ -129,20 +131,31 @@ function parallax() {
      var hT2 = $('#Header2').offset().top,
          hH2 = $('#Header2').outerHeight();
 
-    if ((wS+300) > (hT2+hH2-wH))
+    if ((wS+350) > (hT2+hH2-wH))
     {
       $('.progress').addClass('slide-up');
     }
     //var x = parseInt($('.progress').css('transform').split(',')[5]);  learn matrix of transform
     console.log(wS);
 
-    if(wS>2687){
+    if(wS>2410)
+    {
+      $('#pk-h1').addClass('pk-slide-rightin');
+    }
+
+    if(wS>2508){
       $('.py').addClass('python');
       $('.jv').addClass('java');
       $('.cp').addClass('cpp');
       $('.c').addClass('cc');
     }
 
+    if(wS>2710)
+    {
+      $('#web-h1').addClass('web-slide-rightin');
+      $('#web-h2').addClass('web-slide-rightin2');
+      $('.skills-wrapper').addClass('skills-slide-rightin');
+    }
 
 
   });
