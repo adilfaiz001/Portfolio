@@ -117,6 +117,35 @@ function parallax() {
   }*/
 
 
+function isInViewport(node) {
+    var rect = node.getBoundingClientRect()
+    return (
+      (rect.height > 0 || rect.width > 0) &&
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    )
+  }
+
+$(window).scroll(function() {
+  var scrolled = $(window).scrollTop()
+  $('.parallax').each(function(index, element) {
+    var initY = $(this).offset().top
+    var height = $(this).height()
+    var endY  = initY + $(this).height()
+
+    // Check if the element is in the viewport.
+    var visible = isInViewport(this)
+    if(visible) {
+      var diff = scrolled - initY
+      var ratio = Math.round((diff / height) * 100)
+      $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
+    }
+  })
+})
+
+
 //optimize scroll content with element position for different devices
   $(window).scroll(function() {
      var hT = $('#Header1').offset().top,
@@ -135,7 +164,7 @@ function parallax() {
     {
       $('.progress').addClass('slide-up');
     }
-    //var x = parseInt($('.progress').css('transform').split(',')[5]);  learn matrix of transform
+
     console.log(wS);
 
     if(wS>2410)
@@ -150,12 +179,21 @@ function parallax() {
       $('.c').addClass('cc');
     }
 
-    if(wS>2710)
+    if(wS>3070)
+    {
+      $('.con-code2').addClass('cc2-animate');
+    }
+
+    if(wS>3670)
     {
       $('#web-h1').addClass('web-slide-rightin');
       $('#web-h2').addClass('web-slide-rightin2');
-      $('.skills-wrapper').addClass('skills-slide-rightin');
+      //$('.skills-wrapper').addClass('skills-slide-rightin');
+      $('.f-1').addClass('fill1');
+      $('.f-2').addClass('fill2');
     }
+
+    //var x = parseInt($('.skills-wrapper').css('transform').split(',')[4]);
 
 
   });
