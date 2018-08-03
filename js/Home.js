@@ -188,9 +188,14 @@ $(window).scroll(function() {
     {
       $('#web-h1').addClass('web-slide-rightin');
       $('#web-h2').addClass('web-slide-rightin2');
-      //$('.skills-wrapper').addClass('skills-slide-rightin');
-      $('.f-1').addClass('fill1');
-      $('.f-2').addClass('fill2');
+      $('.skills-wrapper').addClass('skills-slide-rightin');
+      var i ;
+      for(i = 1;i<=8;i=i+1)
+      {
+        $('.f-'+String(i)).addClass('fill'+String(i));
+      }
+
+
     }
 
     //var x = parseInt($('.skills-wrapper').css('transform').split(',')[4]);

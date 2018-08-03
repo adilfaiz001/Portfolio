@@ -1101,8 +1101,8 @@ opacity: 0;
 .skills-wrapper{
     width: 50%;
     margin: 0px 0px 0px 91px;
-    /*transform: translate3d(60em,0,0);
-    opacity: 0;*/
+    transform: translate3d(60em,0,0);
+    opacity: 0;
 }
 .skills-slide-rightin{
   animation: skillc 1s ease both;
@@ -1161,12 +1161,20 @@ margin-top: 8%;
     background: #00A1A7;
 }
 
-.f-1,.f-2
+.f-1,
+.f-2,
+.f-3,
+.f-4,
+.f-5,
+.f-6,
+.f-7,
+.f-8
 {
   width: 0px;
   transition-property: width ;
   transition-duration: 1.3s;
   transition-timing-function: ease-in-out;
+  transition-delay: 1.5s;
 }
 .fill1
 {
@@ -1175,6 +1183,21 @@ margin-top: 8%;
 .fill2
 {
   width:70%;
+}
+.fill3{
+  width:60%;
+}
+.fill4{
+  width: 55%;
+}
+.fill5,
+.fill6,
+.fill7
+{
+  width: 20%;
+}
+.fill8{
+  width: 50%;
 }
 
 
