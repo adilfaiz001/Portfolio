@@ -333,7 +333,7 @@ margin-top: 13.5em;
   position: relative;
   bottom: 2.5em;
   margin-left: 45em;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .img-self>img
 {
@@ -807,7 +807,7 @@ margin-top: 13.5em;
 .con-code{
   position: relative;
     width: 100%;
-    top: 10em;
+    top: 26%;
     text-align: -webkit-center;
 }
 .con-code>p{
