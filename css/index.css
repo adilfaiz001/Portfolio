@@ -1,13 +1,14 @@
-/*Navigation Bar NavBar */
 body{
   overflow-x: hidden;
   background-color: #d4cdcd;
 }
 
-/*::-webkit-scrollbar{
-  width: 10px;
+::-webkit-scrollbar{
+  width: .1px;
 }
-*/
+* {
+    box-sizing: border-box;
+}
 .hbmenu {
     display: block;
     position: absolute;
@@ -48,7 +49,6 @@ body{
   border-radius: 0;
   position: fixed;
   width: 100%;
-  /*background-color: rgba(26, 188, 156, 0.87);*/
   background-color: #333;
   border: 0;
   z-index: 100;
@@ -91,105 +91,11 @@ body{
 /*Navigation Bar Ends*/
 
 
+
 /*Cover Page */
 
-  /*Cover Hamburger menu */
-.c-hamburger
-{
-display: block;
-position: relative;
-top: 20px;
-left: 30px;
-overflow: hidden;
-margin: 0;
-padding: 0;
-width: 70px;
-height: 60px;
-font-size: 0;
-text-indent: -9999px;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-box-shadow: none;
-border-radius: none;
-border: none;
-cursor: pointer;
--webkit-transition: background .3s;
-transition: background .3s;
-background-color: rgba(26, 188, 156, 1);
-}
-.c-hamburger:hover{
-  background-color: black;
-}
-.c-hamburger span {
-    display: block;
-    position: absolute;
-    top: 28px;
-    left: 15px;
-    right: 18px;
-    height: 4px;
-    width: 60%;
-    background: #616161;
-}
-.c-hamburger span::after, .c-hamburger span::before {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #616161;
-  content: "";
-}
-.c-hamburger span::before {
-    top: -14px;
-}
-.c-hamburger span::after {
-    bottom: -14px;
-}
-.c-hamburger:focus {
-  outline: none;
-}
-.c-hamburger--htla span {
-  transition: transform 0.3s;
-}
+/*Cover page Content */
 
-.c-hamburger--htla span::before {
-  transform-origin: top right;
-  transition: transform 0.3s, width 0.3s, top 0.3s;
-}
-
-.c-hamburger--htla span::after {
-  transform-origin: bottom right;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s;
-}
-
-/* active state, i.e. menu open
-.c-hamburger--htla.is-active {
-  background-color: #18903c;
-}
-
-.c-hamburger--htla.is-active span {
-  transform: rotate(180deg);
-}
-
-.c-hamburger--htla.is-active span::before,
-.c-hamburger--htla.is-active span::after {
-  width: 50%;
-}
-
-.c-hamburger--htla.is-active span::before {
-  top: 0;
-  transform: translateX(23px) translateY(1px) rotate(45deg);
-}
-
-.c-hamburger--htla.is-active span::after {
-  bottom: 0;
-  transform: translateX(23px) translateY(-3px) rotate(-45deg);
-}
-  Cover Hamburger Menu End */
-
-
-  /*Cover page Content */
 .cover-page{
   background-image:url('../img/cover2.jpg');
   background-size: cover;
@@ -654,7 +560,11 @@ margin-top: 13.5em;
 {
   float: right;
   text-decoration: none;
-  text
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-family: 'Poiret One', cursive;
+  margin-right: 16%;
+  margin-top: 2%;
 }
 .about{
   position: relative;
