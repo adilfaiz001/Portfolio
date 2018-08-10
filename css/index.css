@@ -1120,7 +1120,7 @@ span{
 .footer{
   position: relative;
   background-color: #1d1d1d;
-  height: 675px;
+  height: 680px;
   width: 100%;
   top: 30em;
 }
@@ -1265,4 +1265,13 @@ input, textarea {
 }
 .submit{
   text-align: left;
+}
+.lets-talk .talk-form ul li input{
+  background-color: #1d1d1d;
+}
+.lets-talk awesome-button{
+  margin: 0 8px 8px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: MontSerrat,Tahoma,Arial,sans-serif;
 }
