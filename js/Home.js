@@ -195,6 +195,14 @@ $(window).scroll(function() {
         $('.f-'+String(i)).addClass('fill'+String(i));
       }
 
+      if(wS>4335){
+        $('.get-in-1').addClass('get-in-animate');
+        $('.get-in-2').addClass('get-in-animate');
+      }
+      if(wS>=4474)
+      {
+        setTimeout(typeWriter,20);
+      }
 
     }
 
@@ -203,6 +211,27 @@ $(window).scroll(function() {
 
   });
 
+$('label').click(function() {
+  $('.fill-name').addClass('input1');
+  $('#name').addClass('name1');
+  $('input').focus();
+  $('input').focusout(function() {
+    $('.fill-name').removeClass('input1');
+    $('#name').removeClass('name1');
+  });
+});
+
+var i = 0;
+var txt = 'Fill with your name';
+var speed = 25;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("fill-animate").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 
 
 /*Event triggers */
