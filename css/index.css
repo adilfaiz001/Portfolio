@@ -2099,9 +2099,6 @@ margin-top: 8%;
     height: 50px;
     padding: 0;
 }
-.input-block li.active{
-  z-index: 120;
-}
 .input-block li{
   position: absolute;
   top: 0;
@@ -2170,6 +2167,10 @@ margin-top: 8%;
   font-size: 18px;
   font-family: Lato,Helvetica,Arial,sans-serif;
 }
+
+.name{
+  z-index: 120;
+}
 .fill-name{
   opacity: 1;
   transition: opacity 0.4s linear;
@@ -2179,10 +2180,6 @@ margin-top: 8%;
   font-weight: 700;
   font-size: 18px;
   font-family: Lato,Helvetica,Arial,sans-serif;
-
-}
-#fill-animate
-{
 
 }
 .input1
@@ -2201,6 +2198,9 @@ margin-top: 8%;
   -moz-transition-timing-function: linear;
   -webkit-transition-timing-function: linear;
 }
+
+
+
 #name
 {
   opacity: 0;
@@ -2378,4 +2378,297 @@ textarea:focus, input:focus{
 }
 .b2{
   width: 220px;
+}
+
+
+
+.active_in{
+  transform: translate3d(-125%,0,0) !important;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.email{
+  z-index: 120;
+  transform:translate3d(144%,0,0);
+}
+.email-animate{
+  transform: translate3d(0,0,0);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.fill-email{
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -webkit-transition: opacity 0.4s linear;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+
+}
+.input2
+{
+  opacity: 0;
+  transition-property: opacity;
+  -o-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+}
+
+#email
+{
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+  transform: translate3d(23em,0,0);
+  -moz-transform: translate3d(23em,0,0);
+  -ms-transform: translate3d(23em,0,0);
+  -webkit-transform: translate3d(23em,0,0);
+}
+
+.email1{
+  animation-name: email1c;
+  -o-animation-name: email1c;
+  -moz-animation-name: email1c;
+  -webkit-animation-name: email1c;
+  animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes email1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+@-o-keyframes email1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+@-moz-keyframes email1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+@-webkit-keyframes email1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+
+.label3
+{
+  max-width: 100% !important;
+}
+
+.msg{
+  z-index: 120;
+  transform: translate3d(144%,0,0);
+}
+.msg-animate{
+  transform: translate3d(0,0,0);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.fill-message{
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -webkit-transition: opacity 0.4s linear;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+
+}
+.input3
+{
+  opacity: 0;
+  transition-property: opacity;
+  -o-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+}
+
+#msg
+{
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+  transform: translate3d(22.5em,0,0);
+  -moz-transform: translate3d(22.5em,0,0);
+  -ms-transform: translate3d(22.5em,0,0);
+  -webkit-transform: translate3d(20.5em,0,0);
+}
+
+.msg1{
+  opacity: 1;
+  animation-name: msg1c;
+  -o-animation-name: msg1c;
+  -moz-animation-name: msg1c;
+  -webkit-animation-name: msg1c;
+  animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-duration: 0.3s;
+  -o-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes msg1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+@-o-keyframes msg1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+@-moz-keyframes msg1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+@-webkit-keyframes msg1c{
+  100%
+  {
+    opacity: 1;
+    transition-property: opacity;
+    -moz-transition-property:opacity;
+    -o-transition-property:opacity;
+    -webkit-transition-property:opacity;
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+
+  }
+}
+button
+{
+  outline: none;
 }
