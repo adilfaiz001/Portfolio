@@ -201,17 +201,16 @@ $(window).scroll(function() {
       }
       if(wS>=4474)
       {
-        setTimeout(typeWriter,20);
+        setTimeout(typeWriter,800);
       }
 
     }
 
     //var x = parseInt($('.skills-wrapper').css('transform').split(',')[4]);
 
-
   });
 
-$('label').click(function() {
+$('#label-1').click(function() {
   $('.fill-name').addClass('input1');
   $('#name').addClass('name1');
   $('input').focus();
@@ -221,19 +220,99 @@ $('label').click(function() {
   });
 });
 
+$('#label-2').click(function() {
+  $('.fill-email').addClass('input2');
+  $('#email').addClass('email1');
+  $('input').focus();
+  $('input').focusout(function() {
+    $('.fill-email').removeClass('input2');
+    $('#email').removeClass('email1');
+  });
+});
+
+$('#label-3').click(function() {
+  $('.fill-message').addClass('input3');
+  $('#msg').addClass('msg1');
+  $('input').focus();
+  $('input').focusout(function() {
+    $('.fill-message').removeClass('input3');
+    $('#msg').removeClass('msg1');
+  });
+});
+
+
 var i = 0;
+var j = 0;
+var k = 0;
+
 var txt = 'Fill with your name';
+var txt2 = 'Write your email';
+var txt3 = 'now write your awesome message :D';
+
 var speed = 25;
 
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("fill-animate").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriter, speed+10);
   }
 }
 
+function email_write()
+{
+  if(j<txt2.length)
+  {
+    document.getElementById("fill-email-id").innerHTML += txt2.charAt(j);
+    j++;
+    setTimeout(email_write,speed);
+  }
+}
 
+function msg_write()
+{
+  if(k < txt3.length)
+  {
+    document.getElementById('fill-msg-id').innerHTML += txt3.charAt(k);
+    k++;
+    setTimeout(msg_write,speed);
+  }
+}
+
+function enabled_email()
+{
+  document.getElementById('Email').disabled = false ;
+}
+function enabled_msg()
+{
+  document.getElementById('Msg').disabled = false ;
+}
+function chr(ch,index)
+{
+  return ch.chartAt(index);
+}
+
+document.getElementById('Email').disabled = true ;
+document.getElementById('Msg').disabled = true ;
+
+$('.b1').click(function() {
+  /* Act on the event */
+  $('.name').addClass('active_in');
+  $('.email').addClass('email-animate');
+  enabled_email();
+  setTimeout(email_write,800)
+
+  $('.b1').click(function() {
+    /* Act on the event */
+    $('.email').addClass('active_in');
+    $('.msg').addClass('msg-animate');
+    enabled_msg();
+    setTimeout(msg_write,800);
+
+
+
+  });
+});
 /*Event triggers */
 
 window.onscroll = function()
