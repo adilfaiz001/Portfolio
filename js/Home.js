@@ -213,8 +213,8 @@ $(window).scroll(function() {
 $('#label-1').click(function() {
   $('.fill-name').addClass('input1');
   $('#name').addClass('name1');
-  $('input').focus();
-  $('input').focusout(function() {
+  $('#Name').focus();
+  $('#Name').focusout(function() {
     $('.fill-name').removeClass('input1');
     $('#name').removeClass('name1');
   });
@@ -223,8 +223,8 @@ $('#label-1').click(function() {
 $('#label-2').click(function() {
   $('.fill-email').addClass('input2');
   $('#email').addClass('email1');
-  $('input').focus();
-  $('input').focusout(function() {
+  $('#Email').focus();
+  $('#Email').focusout(function() {
     $('.fill-email').removeClass('input2');
     $('#email').removeClass('email1');
   });
@@ -233,8 +233,8 @@ $('#label-2').click(function() {
 $('#label-3').click(function() {
   $('.fill-message').addClass('input3');
   $('#msg').addClass('msg1');
-  $('input').focus();
-  $('input').focusout(function() {
+  $('#Msg').focus();
+  $('#Msg').focusout(function() {
     $('.fill-message').removeClass('input3');
     $('#msg').removeClass('msg1');
   });
