@@ -51,3 +51,14 @@ body{
   font-family: 'Comfortaa', cursive;
   font-weight: bolder;
 }
+
+.side-Bar
+{
+  position: fixed;
+  height: 100%;
+  width: 25%;
+}
+.side-bar-Menu
+{
+
+}
