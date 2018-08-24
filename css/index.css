@@ -647,6 +647,9 @@ margin-top: 13.5em;
 {
 
 }
+.tht{
+  margin-top: 6%;
+}
 .Quote
 {
   font-size: 2.5em;
@@ -668,7 +671,7 @@ margin-top: 13.5em;
 }
 .about{
   position: relative;
-  top: 21em;
+  top: 40px;
 }
 .intro
 {
@@ -689,13 +692,13 @@ margin-top: 13.5em;
 {
   text-decoration: none;
 }
-.about>p
+.about>.colxs9>p
 {
   text-align: center;
   padding-left: 6em;
   padding-right:6em;
   font-family: 'Economica', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
   padding-bottom: 2.5em;
 }
@@ -804,7 +807,7 @@ margin-top: 13.5em;
 /*Page Content */
 .page-content{
   position: relative;
-  top: 400px;
+  top: 210px;
 }
 
 #Header1{
@@ -816,7 +819,7 @@ margin-top: 13.5em;
 .con-code{
   position: relative;
     width: 100%;
-    top: 26%;
+    top: 36%;
     text-align: center;
 }
 .con-code>p{
@@ -1457,7 +1460,7 @@ animation: prog_up 1s forwards;
 #Header3{
   width: 100%;
   height: 620px;
-  background-image: url('../img/pg2.jpg');
+  background-image: url('../img/pg21.jpg');
   background-blend-mode: color;
   background-color: rgba(29, 29, 29, 0.52);
   background-attachment: fixed;

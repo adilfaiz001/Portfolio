@@ -59,7 +59,7 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  margin-top: 12%;
+  margin-top: 10%;
 
 }
 .sidebar
@@ -67,4 +67,57 @@ body{
   position: fixed;
   height: 100%;
   width: 25%;
+  padding-left: 3%;
+}
+.all-list
+{
+  width: 100%;
+}
+aside ul
+{
+    text-decoration: none;
+    display: block;
+    list-style-type: none;
+}
+aside a
+{
+    font-size: 1.6em;
+    line-height: 2.7rem;
+    color: #5d5d5d;
+    text-decoration: none !important;
+    font-family: 'Comfortaa', cursive;
+}
+aside a:hover
+{
+  color: blue;
+}
+.category,.timeline
+{
+  width: 100%;
+}
+aside h3
+{
+    width: 60%;
+    margin-left: 11%;
+    font-size: 22px;
+}
+aside li{
+  line-height: 30pt;
+}
+.project-side
+{
+  width: 77%;
+  height: 100%;
+  position: relative;
+  left: 24%;
+}
+.bns
+{
+  height: 20px;
+  width: 80%;
+  
+}
+.fig1
+{
+
 }
