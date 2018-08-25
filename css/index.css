@@ -692,7 +692,7 @@ margin-top: 13.5em;
 {
   text-decoration: none;
 }
-.about>.colxs9>p
+.about>.col-xs-12>p
 {
   text-align: center;
   padding-left: 6em;
@@ -1977,18 +1977,23 @@ margin-top: 8%;
     padding-right: 2%;
     font-size: 11pt;
 }
+
+
+
 .footer{
   position: relative;
   background-color: #1d1d1d;
   height: 680px;
   width: 100%;
   top: 30em;
+  margin-bottom: 0%;
 }
 .foot-header{
-  position: relative;
+    position: relative;
     margin-left: 24%;
     margin-top: 0%;
     top: 24%;
+    padding: 0%;
 }
 .footer .foot-header h1{
     color: #cacaca;
@@ -2089,6 +2094,7 @@ margin-top: 8%;
   top: 22%;
   width: 54%;
   margin-left: 24%;
+  padding: 0%;
 }
 .talk-form{
     position: relative;
