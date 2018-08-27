@@ -48,7 +48,7 @@ document.querySelector(".burger").onclick=function()
 {
   if (document.querySelector(".st-2") != null)
   {
-    document.getElementById('slide-left-menu').style.transform="translateX(-103.8%)";
+    document.getElementById('slide-left-menu').style.transform="translateX(-115.8%)";
     document.getElementById('slide-left-menu').style.transition="transform .45s cubic-bezier(.45,0,0,1)";
     document.getElementById("Burger").classList.add("st-1");
     setTimeout(del,400);
@@ -188,14 +188,22 @@ $(window).scroll(function() {
     {
       $('#web-h1').addClass('web-slide-rightin');
       $('#web-h2').addClass('web-slide-rightin2');
+
       $('.skills-wrapper').addClass('skills-slide-rightin');
       var i ;
       for(i = 1;i<=8;i=i+1)
       {
         $('.f-'+String(i)).addClass('fill'+String(i));
       }
+      var j;
+      for(j = 1;j<=5;j++)
+      {
+        $('.f2-'+String(j)).addClass('fill2-'+String(j));
+      }
+    }
 
-      if(wS>4335){
+      if(wS>4335)
+      {
         $('.get-in-1').addClass('get-in-animate');
         $('.get-in-2').addClass('get-in-animate');
       }
@@ -204,7 +212,7 @@ $(window).scroll(function() {
         setTimeout(typeWriter,800);
       }
 
-    }
+
 
     //var x = parseInt($('.skills-wrapper').css('transform').split(',')[4]);
 
