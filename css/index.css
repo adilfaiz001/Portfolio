@@ -146,11 +146,16 @@ margin-top: 13.5em;
 }
 .cover-detail>h2
 {
-  font-size: 20px;
+  font-size: 27px;
   font-weight: bolder;
   font-family: 'Poiret One', cursive;
   color: rgb(255, 255, 255);
-  margin-left: 60px;
+  margin-left: 55px;
+  line-height:24pt;
+}
+.cover-detail>h2:nth-child(1)
+{
+  margin-left: 5%;
 }
 .row{
   margin-left: auto;
@@ -256,7 +261,7 @@ margin-top: 13.5em;
 .img-self{
   position: relative;
   bottom: 2.5em;
-  margin-left: 45em;
+  margin-left: 47em;
   margin-top: 2em;
 }
 .img-self>img
@@ -2195,6 +2200,7 @@ margin-top: 8%;
 .input-block .label .i-svg path {
     fill: #7a7a7a;
 }
+
 .input-block label {
   cursor: text;
   overflow: hidden;
@@ -2248,104 +2254,6 @@ margin-top: 8%;
   -webkit-transition-timing-function: linear;
 }
 
-
-
-#name
-{
-  opacity: 0;
-  transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  -moz-transition: opacity 0.3s linear;
-  -webkit-transition: opacity 0.3s linear;
-  transform: translate3d(23em,0,0);
-  -moz-transform: translate3d(23em,0,0);
-  -ms-transform: translate3d(23em,0,0);
-  -webkit-transform: translate3d(23em,0,0);
-}
-
-.name1{
-  animation-name: name1c;
-  -o-animation-name: name1c;
-  -moz-animation-name: name1c;
-  -webkit-animation-name: name1c;
-  animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-  animation-duration: 0.3s;
-  -o-animation-duration: 0.3s;
-  -moz-animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-}
-
-@keyframes name1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-o-keyframes name1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-moz-keyframes name1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-webkit-keyframes name1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
 .input-block .name .i-svg {
     margin-top: 4px;
 }
@@ -2365,7 +2273,7 @@ margin-top: 8%;
     left: 0;
     width: 80%;
     height: 100%;
-    padding: 6px 14px 5px 33px;
+    padding: 14px 14px 5px 33px;
     font-size: 18px;
     font-weight: 700;
     color: #797979;
@@ -2378,6 +2286,7 @@ margin-top: 8%;
     -o-transition: background .2s ease-out,border .2s ease-out,color .2s ease-out;
     -webkit-transition: background .2s ease-out,border .2s ease-out,color .2s ease-out;
     transition: background .2s ease-out,border .2s ease-out,color .2s ease-out;
+    font-family: Lato,Helvetica,Arial,sans-serif;
 }
 input, textarea {
     -webkit-appearance: none!important;
@@ -2395,26 +2304,6 @@ textarea:focus, input:focus{
 .lets-talk .talk-form ul li input{
   background-color: #1d1d1d;
 }
-.lets-talk button{
-  margin: 0 8px 8px 0;
-  height: 42px;
-  background-color: #e1e1e1;
-  border-radius: 6px;
-  -o-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  box-shadow: -3px 6px 4px 1px #000000;
-  -o-box-shadow: -3px 6px 4px 1px #000000;
-  -moz-box-shadow: -3px 6px 4px 1px #000000;
-  -webkit-box-shadow: -3px 6px 4px 1px #000000;
-  border: 0;
-  opacity: 0.6;
-}
-.lets-talk button:hover{
-  background-color: #a1a1a1;
-  opacity: 1;
-}
-
 .lets-talk button span{
   font-weight: 700;
   text-transform: uppercase;
@@ -2477,104 +2366,6 @@ textarea:focus, input:focus{
   -moz-transition-timing-function: linear;
   -webkit-transition-timing-function: linear;
 }
-
-#email
-{
-  opacity: 0;
-  transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  -moz-transition: opacity 0.3s linear;
-  -webkit-transition: opacity 0.3s linear;
-  transform: translate3d(25em,0,0);
-  -moz-transform: translate3d(25em,0,0);
-  -ms-transform: translate3d(25em,0,0);
-  -webkit-transform: translate3d(25em,0,0);
-}
-
-.email1{
-  animation-name: email1c;
-  -o-animation-name: email1c;
-  -moz-animation-name: email1c;
-  -webkit-animation-name: email1c;
-  animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-  animation-duration: 0.3s;
-  -o-animation-duration: 0.3s;
-  -moz-animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-}
-
-@keyframes email1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-o-keyframes email1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-moz-keyframes email1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-webkit-keyframes email1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-
 .label3
 {
   max-width: 100% !important;
@@ -2619,105 +2410,105 @@ textarea:focus, input:focus{
   -moz-transition-timing-function: linear;
   -webkit-transition-timing-function: linear;
 }
-
-#msg
-{
-  opacity: 0;
-  transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  -moz-transition: opacity 0.3s linear;
-  -webkit-transition: opacity 0.3s linear;
-  transform: translate3d(22.5em,0,0);
-  -moz-transform: translate3d(22.5em,0,0);
-  -ms-transform: translate3d(22.5em,0,0);
-  -webkit-transform: translate3d(20.5em,0,0);
-}
-
-.msg1{
-  opacity: 1;
-  animation-name: msg1c;
-  -o-animation-name: msg1c;
-  -moz-animation-name: msg1c;
-  -webkit-animation-name: msg1c;
-  animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-  animation-duration: 0.3s;
-  -o-animation-duration: 0.3s;
-  -moz-animation-duration: 0.3s;
-  -webkit-animation-duration: 0.3s;
-  animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-}
-
-@keyframes msg1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-o-keyframes msg1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-moz-keyframes msg1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
-@-webkit-keyframes msg1c{
-  100%
-  {
-    opacity: 1;
-    transition-property: opacity;
-    -moz-transition-property:opacity;
-    -o-transition-property:opacity;
-    -webkit-transition-property:opacity;
-    transition-timing-function: linear;
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-
-  }
-}
 button
 {
   outline: none;
+}
+.lets-talk button{
+  margin: 0 8px 8px 0;
+  height: 42px;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  box-shadow: -3px 6px 4px 1px #000000;
+  -o-box-shadow: -3px 6px 4px 1px #000000;
+  -moz-box-shadow: -3px 6px 4px 1px #000000;
+  -webkit-box-shadow: -3px 6px 4px 1px #000000;
+  border: 0;
+  opacity: 0.6;
+}
+.bb1:hover,.bb2:hover
+{
+  cursor: not-allowed;
+  background-color: #a1a1a1;
+  opacity: 1;
+}
+.bb1,.bb2
+{
+  background-color: #e1e1e1;
+}
+.b-active
+{
+  background-color: #009688; ;
+  cursor: pointer;
+}
+
+
+.input-block .wrape-name .i-svg
+{
+  position: relative;
+  bottom: 46.8%;
+  height: 18px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.input-block .wrape-name .i-svg path
+{
+  fill: #7a7a7a;
+}
+
+.agl-1 p
+{
+  position: relative;
+}
+.wrape-name
+{
+    position: relative;
+    left: 30px;
+    bottom: 24px;
+    height: 22.5px;
+    background-color: #1d1d1d;
+    border-radius: 1.5pt;
+    width: fit-content;
+    -webkit-transform: translate3d(0,44px,0);
+    -moz-transform: translate3d(0,44px,0);
+    -o-transform: translate3d(0,44px,0);
+    transform: translate3d(0,44px,0);
+}
+.wrape-name-div
+{
+   background-color: rgb(58, 58, 58);
+   transform: translate3d(-30px,0,0);
+  -webkit-transform: translate3d(-30px,0,0);
+  -moz-transform: translate3d(-30px,0,0);
+  -o-transform: translate3d(-30px,0,0);
+  transition: transform 0.1s ease-out;
+  -webkit-transition: transform 0.1s ease-out;
+  -moz-transition: transform 0.1s ease-out;
+  -o-transition: transform 0.1s ease-out;
+
+}
+.agl-anchor
+{
+  text-decoration: none;
+  color: #6a6a6a;
+}
+.agl-anchor:hover
+{
+  text-decoration: none;
+  color: #6a6a6a;
+}
+.agl-text
+{
+
+}
+#agl-name
+{
+  position: relative;
+  padding: 0 7px 0 24px;
+  bottom: 24px;
+  margin: 0 !important;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  font-weight: 800;
 }
