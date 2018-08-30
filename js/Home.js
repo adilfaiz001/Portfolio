@@ -165,8 +165,6 @@ $(window).scroll(function() {
       $('.progress').addClass('slide-up');
     }
 
-    console.log(wS);
-
     if(wS>2410)
     {
       $('#pk-h1').addClass('pk-slide-rightin');
@@ -218,15 +216,10 @@ $(window).scroll(function() {
 
   });
 
-$('#label-1').click(function() {
-  $('.fill-name').addClass('input1');
-  $('#name').addClass('name1');
-  $('#Name').focus();
-  $('#Name').focusout(function() {
-    $('.fill-name').removeClass('input1');
-    $('#name').removeClass('name1');
-  });
-});
+/*--------------footer-------*/
+
+
+
 
 $('#label-2').click(function() {
   $('.fill-email').addClass('input2');
@@ -303,24 +296,72 @@ function chr(ch,index)
 document.getElementById('Email').disabled = true ;
 document.getElementById('Msg').disabled = true ;
 
-$('.b1').click(function() {
-  /* Act on the event */
-  $('.name').addClass('active_in');
-  $('.email').addClass('email-animate');
-  enabled_email();
-  setTimeout(email_write,800)
+$('.b1').prop('disabled', true);
 
-  $('.b1').click(function() {
-    /* Act on the event */
-    $('.email').addClass('active_in');
-    $('.msg').addClass('msg-animate');
-    enabled_msg();
-    setTimeout(msg_write,800);
+var b1 = $('.b1');
+var b2 = $('.b2');
 
+/*
+        $('.b1').click(function() {
+          $('.email').addClass('active_in');
+          $('.msg').addClass('msg-animate');
+          enabled_msg();
+          setTimeout(msg_write,800);
+        });
 
-
+*/
+$('#label-1').click(function() {
+  $('.fill-name').addClass('input1');
+  $('#Name').focus();
+  $('#Name').focusout(function() {
+    $('.fill-name').removeClass('input1');
   });
 });
+
+$('#Name').on('keyup', function()
+ {
+    if (this.value.length>0)
+    {
+      $('.wrape-name').addClass('wrape-name-div');
+    }
+    if (this.value.length===0)
+    {
+      $('#fill-animate').addClass('fill-name');
+    }
+    if (this.value.length>=3)
+    {
+      b1.prop('disabled',false);
+      b1.removeClass('bb1');
+      b1.addClass('b-active');
+      $('#fill-animate').removeClass('fill-name');
+      b1.click(function()
+      {
+            /* Act on the event */
+            $('.name').addClass('active_in');
+            $('.email').addClass('email-animate');
+            enabled_email();
+            setTimeout(email_write,800)
+      });
+    }
+    if (this.value.length<3)
+    {
+      b1.prop('disabled',true);
+      b1.addClass('bb1');
+      b1.removeClass('b-ative');
+    }
+});
+
+$('.anchor1').click(function(event) {
+  /* Act on the event */
+    
+});
+
+
+
+
+
+
+
 /*Event triggers */
 
 window.onscroll = function()
