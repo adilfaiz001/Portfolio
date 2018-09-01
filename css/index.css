@@ -2039,6 +2039,7 @@ margin-top: 8%;
     margin-top: 0%;
     top: 24%;
     padding: 0%;
+    transition: transform 0.4s ease-in 0.1s;
 }
 .footer .foot-header h1{
     color: #cacaca;
@@ -2135,8 +2136,8 @@ margin-top: 8%;
 }
 .lets-talk{
   position: relative;
-  height: 50%;
-  top: 22%;
+  height: 50%;  /*30%*/
+  top: 22%;    /*25%*/
   width: 54%;
   margin-left: 24%;
   padding: 0%;
@@ -2144,6 +2145,8 @@ margin-top: 8%;
 .talk-form{
     position: relative;
     top: 12%;
+    transition: transform 0.4s ease-in;
+
 }
 .input-block
 {
@@ -2303,6 +2306,7 @@ textarea:focus, input:focus{
 }
 .submit{
   text-align: left;
+  transition: transform 0.4s ease-in;
 }
 .lets-talk .talk-form ul li input{
   background-color: #1d1d1d;
@@ -2324,7 +2328,7 @@ textarea:focus, input:focus{
 
 
 .active_in{
-  transform: translate3d(-125%,0,0) !important;
+  transform: translate3d(-150%,0,0) !important;
   transition-property: transform;
   transition-duration: 0.2s;
   transition-timing-function:ease-out;
@@ -2537,12 +2541,19 @@ svg line{
 {
   transform:translate3d(25%,0,0);
 }
+.state-2
+{
+  transform:translate3d(23%,0,0);
+}
 .box-3
 {
   width: 0%;
   position: relative;
   bottom: 65%;
   right: 2%;
+}
+.box3-width{
+  width: 100% !important;
 }
 .box-3 svg
 {
