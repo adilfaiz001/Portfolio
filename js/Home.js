@@ -472,10 +472,29 @@ $('#Msg').on('keyup',function(event)
   {
     $('#fill-animate').addClass('fill-msg');
   }
-  b2.click(function(event) {
+  b2.click(function(event)
+  {
+
+      $('.box-3').addClass('box3-width');
+
+      $('.line3').addClass('line-animate');
+
+      $('.talk-form').addClass('state-1');
+
+      $('.foot-header').addClass('state-2');
+
+      setTimeout(function()
+      {
+        $('.talk-form').removeClass('state-1');
+        $('.foot-header').removeClass('state-1');
+      },600);
+      setTimeout(function(){
+        $('.talk-form').addClass('active_in');
+        $('.foot-header').addClass('active_in');
+        //$('.msg').addClass('msg-animate');
+      },700);
+    });
     /* Act on the event */
-      $('.talk-form').addClass('active_in');
-  });
   if (event.keyCode === 13)
   {
     $('.b2').click();
