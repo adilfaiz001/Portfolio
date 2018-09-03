@@ -1,3 +1,21 @@
+var start = new Date();
+var t = 0;
+$(window).load(function() {
+   t = (new Date() - start);
+});
+
+console.log(t);
+$(document).ready(function() {
+
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    },(t+1)*1000);
+
+});
+
+
+
+
 /*Navigation Bar scroll function */
 function navbarScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -294,6 +312,7 @@ var b2 = $('.b2');
         });
 
 */
+
 $('#label-1').click(function() {
   $('.fill-name').addClass('input1');
   $('#Name').focus();
