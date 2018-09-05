@@ -11,6 +11,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.0.12.js"></script>
 
   </head>
 
@@ -33,7 +34,7 @@
             <div class="col-xs-12 col-md-3 all-list">
               <nav>
                 <ul>
-                  <li> <a href="#">All Projects</a></li>             <!--all project template -->
+                  <li> <a href="#" id="all-projects-tab">All Projects</a></li>             <!--all project template -->
                   <li> <a href="#">Featured Projects</a> </li>       <!--featured projects template -->
                 </ul>
               </nav>
@@ -75,7 +76,7 @@
 
 
 
-      <div class="project-side col-xs-12 col-md-9 content">
+      <div class="project-side col-xs-12 col-md-9" id="content">
         </div>
 
     </div>
@@ -83,8 +84,9 @@
     <div class="footer">
       </div>
 
-    <script id="all-projects-template "type="text/x-handlebars-template">
+    <script id="all-projects-template" type="text/x-handlebars-template">
       <div class="row">
+
           {{#each all_projects}}
           <div class="col-xs-12 col-md-6" data-id={{@index}}>
             <h2>{{name}}</h2>
@@ -98,10 +100,12 @@
             </div>
           </div>
           {{/each}}
+
       </div>
     </script>
 
 
     <script type="text/javascript" src="js/project_data.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
   </body>
 </html>
