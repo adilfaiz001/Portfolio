@@ -104,6 +104,8 @@ aside h3
 aside li{
   line-height: 30pt;
 }
+
+
 .project-side
 {
   width: 77%;
@@ -111,13 +113,24 @@ aside li{
   position: relative;
   left: 24%;
 }
-.bns
-{
-  height: 20px;
-  width: 80%;
-  
-}
-.fig1
-{
 
+.all-prj
+{
+  height: 40em;
+}
+.all-prj h2
+{
+  font-family: 'Comfortaa', cursive;
+}
+.all-prj .project-thumbnail
+{
+  height: 80%;
+}
+.all-prj .project-thumbnail p
+{
+  font-family: 'Raleway', sans-serif;
+}
+.all-prj .detail
+{
+  display: grid;
 }

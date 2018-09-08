@@ -2124,15 +2124,21 @@ margin-top: 8%;
   width: 50%;
 }
 .fill2-1,
-.fill2-2,
-.fill2-3,
-.fill2-5
+.fill2-3
 {
   width:25%;
+}
+.fill2-2
+{
+  width:50%;
 }
 .fill2-4
 {
   width:22%;
+}
+.fill2-5
+{
+  width:50%;
 }
 
 
