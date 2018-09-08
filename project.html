@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/project.css" media="screen" title="no title" charset="utf-8">
 
     <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -88,13 +89,13 @@
       <div class="row">
 
           {{#each all_projects}}
-          <div class="col-xs-12 col-md-6" data-id={{@index}}>
+          <div class="col-xs-12 col-md-6 all-prj" data-id={{@index}}>
             <h2>{{name}}</h2>
             <div class="project-thumbnail">
               <img src="{{thumbnail}}" alt="">
+              <p>{{des}}</p>
             </div>
             <div class="detail">
-              <p>{{des}}</p>
               <a href="{{url}}">Link</a>
               <a href="{{git_url}}">GitHub</a>
             </div>
