@@ -2,7 +2,7 @@ var projects =  {
         all_projects:[
                       {
                         name : "Project Velvet",
-                        des : "",
+                        des : "Blind navigation system using kinect.",
                         thumbnail: "",
                         img  :
                                 {
