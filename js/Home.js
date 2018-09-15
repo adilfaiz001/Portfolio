@@ -11,7 +11,7 @@ $(document).ready(function()
 
     setTimeout(function(){
         $('body').addClass('loaded');
-    },(t+1)*500);
+    },(t+1)*1500);
 
 });
 
