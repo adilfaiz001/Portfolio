@@ -25,7 +25,7 @@ $(document).ready(function()
 
 
 
-//====================Page utility function==============//
+//============================Page utility function===========================//
 
 window.onscroll = function()
 {
@@ -37,7 +37,7 @@ window.onscroll = function()
 
 
 
-/*=====Navigation Bar scroll function =======*/
+/*=======================Navigation Bar scroll function ======================*/
 function navbarScroll() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("navbar").style.transform="translateY(0)";
@@ -47,12 +47,12 @@ function navbarScroll() {
         document.getElementById("navbar").style.transition="transform 0.4s";
     }
 }
-/*===========================================*/
+/*============================================================================*/
 
 
 
 
-/*========Slide left card====================*/
+/*==============================Slide left card===============================*/
 function p()
 {
   document.getElementById('slide-left-menu').style.transform="translateX(-4em)";
@@ -103,11 +103,9 @@ function del(){
   document.getElementById("Burger").classList.remove("st-1");
 }
 
-/*=============================================*/
+/*============================================================================*/
 
-//===================================================================//
-
-
+//============================================================================//
 
 
 
@@ -126,10 +124,12 @@ function del(){
 
 
 
-//======================Page Content utility==========================//
 
 
-/*===============Parallax Background===================*/
+//=============================Page Content utility===========================//
+
+
+/*=============================Parallax Background============================*/
 function isInViewport(node) {
     var rect = node.getBoundingClientRect()
     return (
@@ -157,12 +157,12 @@ function isInViewport(node) {
       }
     });
   });
-/*=======================================================*/
+/*============================================================================*/
 
 
 
 
-/*=================Scroll Animation======================*/
+/*==============================Scroll Animation==============================*/
 
   $(window).scroll(function()
   {
@@ -234,7 +234,7 @@ function isInViewport(node) {
       $('#web-h2').removeClass('web-h');
       $('#web-h2').addClass('slide-right-in');
 
-      $('.skills-wrapper').removeClass('shills-h');
+      $('.skills-wrapper').removeClass('skills-h');
       $('.skills-wrapper').addClass('slide-right-in');
 
       var i ;
