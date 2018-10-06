@@ -1,3 +1,11 @@
+@media only screen and (max-width:460px)
+{
+  .con-code>p
+  {
+    font-size: 4.7em;
+  }
+}
+
 @media only screen and (max-width: 768px)
 {
   .cover-page
@@ -14,13 +22,171 @@
   {
     font-size: 2.2em;
   }
+  .con-code>p
+  {
+    font-size: 5.5em;
+  }
+  .con-code2>p
+  {
+    font-size: 5.5em;
+  }
+  .detail
+  {
+    display: block;
+  }
+}
+
+@media screen and (max-width:1255px) {
+  .con-code>p
+  {
+    display: block;
+  }
+  .con-code2>p
+  {
+    display: block;
+  }
+}
+@media screen and (max-width:646px)
+{
+  .burger
+  {
+    display: none;
+  }
+
+}
+/*===================================================================*/
+@media (max-width:660px) {
+  /*-------footer media---------*/
+  .foot-header{
+    left:16%;
+  }
+  .footer .foot-header p{
+    line-height: 24pt;
+    font-size: 18px;
+  }
+  .lets-talk{
+    left:16%;
+  }
+
+}
+/*==================================================================*/
+@media (max-width:1224px) {
+  #web-h1,#web-h3{
+    font-size:80px;
+  }
+  #web-h2,#web-h4{
+    font-size:60px;
+    margin-bottom: 4%;
+  }
+}
+@media (max-width:767px) {
+  .web-skills{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+   }
+   #web-h1,#web-h3{
+     display: none;
+   }
+}
+/*-------------------------------------------------------------*/
+/*temporary solution*/
+@media (max-width:1160px) {
+  .foot-header{
+    margin:0 0 2.4% 0;
+  }
+}
+
+@media (max-width:940px) {
+  .foot-header{
+    margin:0 0 3.4% 0;
+  }
+}
+
+@media (max-width:700px) {
+  .foot-header{
+    margin:0 0 5% 0;
+  }
+}
+
+
+
+/*=============================================================================/
+/*-----------------------------------------------------------------------------/
+/********************************Mobile Device*********************************/
+
+@media (max-width:500px)
+{
+  /*display has to change but temp set to none*/
+  #navbar{
+    display:none ;
+  }
+  .slide-left-menu
+  {
+    transform:translateX(-150%);
+    -webkit-transform:translateX(-150%);
+    -moz-transform:translateX(-150%);
+    -o-transform:translateX(-150%);
+  }
+  .cover-page
+  {
+    height:38em;
+    background-size: auto;
+  }
+  #myself
+  {
+    font-size: 6.5em;
+  }
+  .detail h2
+  {
+    font-size: 22px;
+    line-height: 8pt;
+  }
+  .social-class
+  {
+    top:33px;
+  }
+  .img-self
+  {
+    margin-top: 18%;
+  }
+  .img-self>img{
+      height: 13em;
+      width: 13em;
+  }
+
+
+  .con-code p
+  {
+    font-size: 4.5em;
+  }
+  .con-code2 p
+  {
+    font-size: 4.5em;
+  }
+
+  #web-h2,#web-h4
+  {
+    font-size: 50px;
+    margin-bottom: 7%;
+  }
 
 }
 
-@media only screen and (max-width:460px)
-{
-  .con-code>p
+@media (max-width:380px) {
+  .con-code p
   {
-    font-size: 4.7em;
+    font-size: 3.5em;
   }
+
+  .footer .foot-header h1
+  {
+    font-size: 2.625em;
+  }
+  .footer .foot-header p
+  {
+    font-size: 16px;
+    line-height: 24pt;
+  }
+
 }

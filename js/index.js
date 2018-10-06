@@ -554,5 +554,26 @@ $('#Msg').on('keyup',function(event)
   {
     $('.b2').click();
   }
-
 });
+
+
+//============================================================================//
+//-------------------------------Utility Function-----------------------------//
+var email = document.getElementById('Email');
+email.onchange = function()
+{
+  var email_regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if(email.value!=="" && email_regx.test(email.value))
+  {
+    $(email).removeClass('error');
+    $('.mail').removeClass('error-fill');
+    $('#agl-email').removeClass('error');
+  }
+  else{
+    $(email).addClass('error');
+    $('.mail').addClass('error-fill');
+    $('#agl-email').addClass('error');
+    $('.b1').removeClass('b-active');
+    $('.b1').addClass('bb1');
+  }
+}

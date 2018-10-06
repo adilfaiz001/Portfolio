@@ -321,12 +321,7 @@ body{
     margin: 0 0px 0px;
     align-items: center;
 }
-@media screen and (max-width:767px) {
-  .detail
-  {
-    display: block;
-  }
-}
+
 .d
 {
   display: flex;
@@ -646,14 +641,7 @@ body{
     padding: 5px 4px;
     background-color: transparent;
 }
-@media screen and (max-width:646px)
-{
-  .burger
-  {
-    display: none;
-  }
 
-}
 .burger, .filters, .game .status {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -1752,26 +1740,7 @@ animation: prog_up 1s forwards;
   opacity: 0;
 
 }
-@media screen and (max-width:1255px) {
-  .con-code>p
-  {
-    display: block;
-  }
-  .con-code2>p
-  {
-    display: block;
-  }
-}
-@media screen and (max-width:700px) {
-  .con-code>p
-  {
-    font-size: 5.5em;
-  }
-  .con-code2>p
-  {
-    font-size: 5.5em;
-  }
-}
+
 .cc2-animate>p{
   animation: cc2c 0.9s forwards;
   -o-animation: cc2c 0.9s forwards;
@@ -1875,8 +1844,9 @@ animation: prog_up 1s forwards;
 }
 .web
 {
-  display: table;
-  margin-top: 6%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 .web-h
 {
@@ -1930,7 +1900,7 @@ animation: prog_up 1s forwards;
 
 
 
-/*========================web-progress bar===============================*/
+/*==========================web-progress bar===============================*/
 .bar{
     width: 90%;
     color: #666;
@@ -1977,48 +1947,40 @@ animation: prog_up 1s forwards;
 .f-8
 {
   width: 0px;
-  transition-property: width ;
-  -o-transition-property: width ;
-  -moz-transition-property: width ;
-  -webkit-transition-property: width ;
-  transition-duration: 1.3s;
-  -o-transition-duration: 1.3s;
-  -moz-transition-duration: 1.3s;
-  -webkit-transition-duration: 1.3s;
-  transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-delay: 1s;
-  -o-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  -webkit-transition-delay: 1s;
+  transition: width 1.3s ease-in-out 1s ;
+  -o-transition: width 1.3s ease-in-out 1s ;
+  -moz-transition: width 1.3s ease-in-out 1s ;
+  -webkit-transition: width 1.3s ease-in-out 1s ;
 }
 
+/*temorary solution for filling */
 .fill1
 {
-  width:80%;
+  width:85%;
 }
 .fill2
 {
-  width:70%;
+  width:75%;
 }
 .fill3{
-  width:60%;
+  width:70%;
 }
 .fill4{
-  width: 55%;
+  width: 65%;
 }
-.fill5,
+.fill5
+{
+  width:45%;
+}
 .fill6
 {
   width: 25%;
 }
 .fill7{
-  width: 50%;
+  width: 65%;
 }
 
-
+/*temporary solution gor filling*/
 .fill2-1,
 .fill2-3
 {
@@ -2026,15 +1988,15 @@ animation: prog_up 1s forwards;
 }
 .fill2-2
 {
-  width:50%;
+  width:40%;
 }
 .fill2-4
 {
-  width:22%;
+  width:55%;
 }
 .fill2-5
 {
-  width:50%;
+  width:70%;
 }
 .bar span
 {
@@ -2046,28 +2008,12 @@ animation: prog_up 1s forwards;
 {
   width:8%;
 }
-/*============================================================================*/
+/*================================================================================*/
+
+/*====================================footer======================================*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*==================================footer====================================*/
-
+/*===================================*/
 .footer{
   position: relative;
   background-color: #1d1d1d;
@@ -2076,16 +2022,11 @@ animation: prog_up 1s forwards;
   top: 6em;
   margin-bottom: 0%;
 }
-.ft-con
-{
-  top:20%;
-}
 .foot-header{
     position: relative;
-    margin-left: 24%;
-    margin-top: 0%;
-    margin-bottom: 2%;
+    margin:0% 0% 2.2% 0%;
     top: 24%;
+    left:24%;
     padding: 0%;
     transition: transform 0.4s ease-in 0.3s;
 }
@@ -2182,12 +2123,13 @@ animation: prog_up 1s forwards;
     -webkit-transition-property: transform,opacity;
   }
 }
+/*===================================================*/
+
+/*----------------------------------------------------*/
 .lets-talk{
   position: relative;
-  height: 50%;  /*30%*/
-  top: 22%;    /*25%*/
-  width: 54%;
-  margin-left: 24%;
+  top: 22%;
+  left:24%;
   padding: 0%;
 }
 .talk-form{
@@ -2196,13 +2138,17 @@ animation: prog_up 1s forwards;
     transition: transform 0.4s ease-in;
 
 }
+/*-----------------------------------------------------*/
+/*===================================*/
+/*input block css*/
+
 .input-block
 {
   position: relative;
-    margin-bottom: 15px;
-    cursor: text;
-    height: 50px;
-    padding: 0;
+  margin-bottom: 15px;
+  cursor: text;
+  height: 50px;
+  padding: 0;
 }
 .input-block li{
   position: absolute;
@@ -2375,9 +2321,11 @@ textarea:focus, input:focus{
 .b2{
   width: 220px;
 }
+/*===============================*/
 
 
-
+/*=============================================*/
+/*animation*/
 .active_in{
   transform: translate3d(-150%,0,0) !important;
   transition-property: transform;
@@ -2386,7 +2334,7 @@ textarea:focus, input:focus{
 }
 
 .email{
-  z-index: 120;
+  opacity:0;
   transform:translate3d(144%,0,0);
   -webkit-transform:translate3d(144%,0,0);
   -moz-transform:translate3d(144%,0,0);
@@ -2398,27 +2346,16 @@ textarea:focus, input:focus{
 
 }
 .email-animate{
+  opacity:1;
   transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
 
-  transition-property: transform;
-  -webkit-transition-property: transform;
-  -moz-transition-property: transform;
-  -o-transition-property: transform;
-  transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-timing-function: ease-out;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
+  transition-property: all 0.3s ease-out 0.2s;
+  -webkit-transition-property: all 0.3s ease-out 0.2s;
+  -moz-transition-property: all 0.3s ease-out 0.2s;
+  -o-transition-property: all 0.3s ease-out 0.2s;
 }
 
 .fill-email{
@@ -2454,7 +2391,7 @@ textarea:focus, input:focus{
 }
 
 .msg{
-  z-index: 120;
+  opacity:0;
   transform: translate3d(144%,0,0);
   -webkit-transform: translate3d(144%,0,0);
   -moz-transform: translate3d(144%,0,0);
@@ -2465,14 +2402,15 @@ textarea:focus, input:focus{
   -o-transition: transform 0.4s ease-in;
 }
 .msg-animate{
+  opacity:1;
   transform: translate3d(0,0,0);
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
-  transition-property: transform 0.3s ease-out 0.2s;
-  -webkit-transition-property: transform 0.3s ease-out 0.2s;
-  -moz-transition-property: transform 0.3s ease-out 0.2s;
-  -o-transition-property: transform 0.3s ease-out 0.2s;
+  transition-property: all 0.3s ease-out 0.5s;
+  -webkit-transition-property: all 0.3s ease-out 0.5s;
+  -moz-transition-property: all 0.3s ease-out 0.5s;
+  -o-transition-property: all 0.3s ease-out 0.5s;
 }
 
 .fill-message{
@@ -2560,7 +2498,8 @@ button
   background-color: #00695f;
 }
 
-/*-----------name box animation----------------*/
+/*============================================================================*/
+/*----------------------------name box animation------------------------------*/
 .box
 {
   width: 80%;
@@ -2579,10 +2518,10 @@ svg line{
   fill:none;
 }
 .top-line{
-  transform: translate3d(-102%,0,0);
-  -webkit-transform: translate3d(-102%,0,0);
+  transform: translate3d(-100%,0,0);
+  -webkit-transform: translate3d(-100%,0,0);
   -moz-transform: translate3d(-102%,0,0);
-  -o-transform: translate3d(-102%,0,0);
+  -o-transform: translate3d(-100%,0,0);
   transition: transform 0.4s ease-out;
   -webkit-transition: transform 0.4s ease-out;
   -moz-transition: transform 0.4s ease-out;
@@ -2656,8 +2595,7 @@ svg line{
 {
   width: 100%;
 }
-
-
+/*============================================================================*/
 
 
 
@@ -2830,4 +2768,24 @@ svg line{
   margin: 0 !important;
   font-family: Lato,Helvetica,Arial,sans-serif;
   font-weight: 800;
+}
+
+.success
+{
+  color:green;
+  border-color: green;
+}
+.success::placeholder
+{
+  color:green;
+}
+.error {
+    border-color: #c30000 !important;
+    color: #c30000 !important;
+} .error::placeholder {
+    color: #c30000 !important;
+}
+.error-fill
+{
+  fill: #c30000 !important;
 }
